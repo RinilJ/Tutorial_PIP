@@ -1,9 +1,9 @@
-income=int(input("Enter your income:"))
+Income=int(input("Enter your income:"))
 if income<250000:
-    print("NO income_tax")
+    print("No Income Tax")
 elif income<500000:
-    print("Your tax:",income*0.05)
+    print("Your tax:",Income*0.05)
 elif income<1000000:
-    print("Your tax:",income*0.2)
+    print("Your tax:",Income*0.2)
 else:
-    print("Your tax:",income*0.3)
+    print("Your tax:",Income*0.3)
