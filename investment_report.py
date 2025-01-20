@@ -1,8 +1,10 @@
-amt = int(input("Enter the initial amount: "))
-rate = float(input("Enter the interest rate (as a decimal): "))
-years = int(input("Enter the number of years for investment: "))
+initial_investment = float(input("Enter the initial investment: "))
+annual_interest_rate= float(input("Enter the annual interest rate(in %):"))
+year=int (input("Enter the number of years:"))
+annual_interest_rate/=100
 
-print(f"{'Year':<6} {'Final Amount':>12}")
-for year in range(1, years + 1):
-    f_amt = amt * (1 + rate) ** year
-    print(f"{year:<6} {f_amt:12.2f}")
+print("\nYear\tAmount")
+amount=initial_investment
+for year in range(0,year):
+    amount+=amount*annual_interest_rate
+    print(year+1, "\t", "%.2f" % amount)
