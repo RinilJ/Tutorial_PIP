@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 text = input("Enter the string to encrypt: ")
 shift_value = int(input("Enter the distance: "))
@@ -21,7 +20,7 @@ for character in cipher_text:
         shifted_ascii = ord('z') - (reverse_shift - (ord('a') - original_ascii - 1))
     decrypted_text += chr(shifted_ascii)
 print("Decrypted string:", decrypted_text)
-=======
+
 
 text = input("Enter the string to encrypt: ")
 shift_value = int(input("Enter the distance: "))
@@ -44,4 +43,4 @@ for character in cipher_text:
         shifted_ascii = ord('z') - (reverse_shift - (ord('a') - original_ascii - 1))
     decrypted_text += chr(shifted_ascii)
 print("Decrypted string:", decrypted_text)
->>>>>>> 46a65f190954edf40ec80c6636b4443b329fcfa0
+
